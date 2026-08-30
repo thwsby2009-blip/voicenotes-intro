@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceNotes - 您的智能繁體逐字稿助手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans TC', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .hero-gradient { background: linear-gradient(135deg, #eff6ff 0%, #//-// 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+                <span class="text-3xl">🎙️</span> VoiceNotes
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+                <a href="#features" class="hover:text-blue-600 transition-colors">功能特色</a>
+                <a href="#how-it-works" class="hover:text-blue-600 transition-colors">如何使用</a>
+                <a href="#demo" class="hover:text-blue-600 transition-colors">預覽介面</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-6 overflow-hidden bg-slate-50">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="text-left">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                    把聲音變成文字<br><span class="text-blue-600">從此不再苦惱聽錄音</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    VoiceNotes 是一款簡單、直覺的智能逐字稿工具。無論是會議紀錄、課堂筆記還是外語訪談，只需一次錄音，AI 就能幫您將聲音轉化為精準的繁體中文文字。
+                </p>
+                <div class="flex gap-4">
+                    <a href="#demo" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">立即查看預覽</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-blue-100 rounded-full blur-3xl opacity-70"></div>
+                <img src="assets/final_competition_image.jpg" alt="VoiceNotes Interface" class="relative rounded-2xl shadow-2xl border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Features -->
+    <section id="features" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">為什麼使用 VoiceNotes？</h2>
+            <p class="text-slate-500">讓我們幫您省下重複聆聽與打字的時間</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Feature 1 -->
+            <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 text-3xl">✨</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">一鍵錄音，自動轉文字</h3>
+                <p class="text-slate-600 leading-relaxed">按下錄音鍵，AI 會在背景同步處理，您不需要等待，錄完即刻看到逐字稿。</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-green-600 text-3xl">🌍</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">外語翻譯，同步呈現</h3>
+                <p class="text-slate-600 leading-relaxed">說英文、說日文沒問題！系統會自動偵測語言，並為您翻譯成易懂的繁體中文。</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="card-hover bg-white p-8 rounded-3xl border border-slate-100 shadow-sm">
+                <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-6 text-purple-600 text-3xl">📁</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">舊檔案也能轉寫</h3>
+                <p class="text-slate-600 leading-relaxed">手機裡已有的音檔也可以匯入。只要選中檔案，就能快速將其轉化為文字紀錄。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="py-24 px-6 bg-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-16">簡單三步驟，紀錄完成</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
+                    <h4 class="font-bold text-lg mb-2">錄音或匯入</h4>
+                    <p class="text-slate-500 text-sm">直接在 App 錄音，或從手機挑選現有音檔</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
+                    <h4 class="font-bold text-lg mb-2">AI 自動處理</h4>
+                    <p class="text-slate-500 text-sm">雲端 AI 幫您完成轉寫、翻譯與繁體校對</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
+                    <h4 class="font-bold text-lg mb-2">查看與管理</h4>
+                    <p class="text-slate-500 text-sm">在列表中查看逐字稿，隨時分享或刪除</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-24 px-6 max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-slate-900 mb-12">產品預覽</h2>
+        <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+            <img src="assets/final_competition_image.jpg" alt="VoiceNotes Demo" class="w-full h-auto">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-200 text-center">
+        <div class="text-2xl font-bold text-blue-600 mb-4">🎙️ VoiceNotes</div>
+        <p class="text-slate-500 text-sm">讓每段聲音，都成為有價值的文字紀錄</p>
+        <div class="mt-6 text-xs text-slate-400">
+            Version V19 | 繁體中文智能轉寫系統
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceNotes V19 - AI 繁體中文逐字稿專家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans TC', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #38bdf8; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/20 rounded-full blur-[120px]"></div>
+        
+        <div class="relative z-10 text-center max-w-4xl">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-blue-400 uppercase bg-blue-400/10 rounded-full border border-blue-400/20">
+                Now Version V19
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                重新定義 <span class="gradient-text">逐字稿</span> 的體驗
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                專為繁體中文環境設計。從錄音、自動轉寫、多語系翻譯到外部檔案匯入，我們將 AI 的強大能力轉化為最直覺的生產力工具。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#features" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-lg shadow-blue-600/30">探索核心功能</a>
+                <a href="#tech" class="px-8 py-4 glass hover:bg-white/10 text-white font-bold rounded-xl transition-all">技術突破</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Grid -->
+    <section id="features" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">為什麼選擇 VoiceNotes？</h2>
+            <p class="text-slate-400">解決所有傳統轉寫工具的痛點</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="feature-card glass p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 text-2xl">🎙️</div>
+                <h3 class="text-xl font-bold mb-3">即時精準轉寫</h3>
+                <p class="text-slate-400 leading-relaxed">整合頂尖 AI 模型，支持高準確率的語音轉文字，讓紀錄不再依賴記憶。</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-card glass p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-indigo-500/20 rounded-2xl flex items-center justify-center mb-6 text-indigo-400 text-2xl">🌐</div>
+                <h3 class="text-xl font-bold mb-3">跨語言翻譯鏈結</h3>
+                <p class="text-slate-400 leading-relaxed">自動偵測語言，將英文、日文等外語同步轉譯為繁體中文，打破語言隔閡。</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-card glass p-8 rounded-3xl">
+                <div class="w-12 h-12 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6 text-cyan-400 text-2xl">📝</div>
+                <h3 class="text-xl font-bold mb-3">100% 繁體化保障</h3>
+                <p class="text-slate-400 leading-relaxed">內建專屬繁簡轉換層，徹底解決 AI 輸出簡體字的問題，確保呈現純淨繁體。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Showcase -->
+    <section id="tech" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">克服 Android 系統<br><span class="text-blue-400">讀檔與轉碼難題</span></h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-blue-500 font-bold">✓</div>
+                            <p class="text-slate-300"><strong class="text-white">WebM 轉碼引擎：</strong> 實作 client-side 轉碼，將外部各種編碼的 webm/mp4 自動轉為標準 WAV，確保 Whisper 100% 兼容。</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-blue-500 font-bold">✓</div>
+                            <p class="text-slate-300"><strong class="text-white">Content URI 優化：</strong> 克服 Android `Filesystem` 讀取 null 的 bug，透過 `readData: true` 實現秒級檔案讀取。</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-blue-500 font-bold">✓</div>
+                            <p class="text-slate-300"><strong class="text-white">同步異步體系：</strong> 建立「上傳 $ightarrow$ 轉寫 $ightarrow$ 輪詢」的自動化管線，實現流暢的用戶體驗。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative glass rounded-3xl overflow-hidden aspect-video flex items-center justify-center text-slate-500 italic">
+                        <p>[ 這裡可放置 1920x1080 Demo 截圖 ]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer/Invite -->
+    <footer class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto glass p-12 rounded-[3rem] border-blue-500/30">
+            <h2 class="text-3xl font-bold mb-6">邀請一同參與開發</h2>
+            <p class="text-slate-400 mb-8 leading-relaxed">
+                我們正在尋找對 AI 生產力工具感興趣的合作者，一同將 VoiceNotes 打造成最頂尖的逐字稿應用。
+            </p>
+            <div class="text-sm text-slate-500">
+                Version V19 | Built with Capacitor & Supabase & NVIDIA NIM
+            </div>
+        </div>
+        <p class="mt-12 text-slate-600 text-sm">© 2025 VoiceNotes Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
